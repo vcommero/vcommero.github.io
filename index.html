@@ -9,7 +9,7 @@
   <script type="text/javascript">
 	window.onload = function() {
 		var disp = document.getElementById("mobile_status");
-		if (detectMobile) {
+		if (detectMobile() == true) {
 			disp.innerHTML = "You're on a mobile device.";
 		} else { disp.innerHTML = "You're not on a mobile device."; }
 	};
