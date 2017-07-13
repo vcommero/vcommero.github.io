@@ -1,0 +1,66 @@
+@font-face {
+	font-family: 'titillium-web';
+	src: url('TitilliumWeb-Regular.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family: 'titillium-web';
+}
+
+.bckgrnd {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	z-index: -999;
+}
+.bckgrnd_video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+@media (min-aspect-ratio: 16/9) {
+	.bckgrnd_video {
+		height: 300%;
+		top: -100%;
+	}
+}
+@media (max-aspect-ratio: 16/9) {
+	.bckgrnd_video {
+		width: 300%;
+		left: -100%;
+	}
+}
+
+
+@media (max-width: 767px) {
+	.bckgrnd {
+		background: url("poster.png") center center / cover no-repeat;
+	}
+	.bckgrnd_video {
+		display: none;
+	}
+}
+
+.header_bar {
+	position: fixed;
+	background-color: black;
+	display: block;
+	width: 100%;
+	right: 0;
+	top: 0;
+	left: 0;
+	border:none;
+}
+#header_title {
+	color: white;
+	float: left;
+	margin: 10px 40px 10px 40px;
+	text-shadow: 0 0 8px white;
+}
