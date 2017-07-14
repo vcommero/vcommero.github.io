@@ -64,3 +64,13 @@ body {
 	margin: 10px 40px 10px 40px;
 	text-shadow: 0 0 8px white;
 }
+
+#about_me {
+	position: relative;
+	top: 180px;
+	background-color: #33ccff;
+	display: block;
+	width: 85%;
+	margin: auto;
+	padding: 20px 40px 20px 40px;
+}
