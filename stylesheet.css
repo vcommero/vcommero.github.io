@@ -9,6 +9,10 @@ body {
 	font-family: 'titillium-web';
 }
 
+canvas {
+	display: inline-block;
+}
+
 .bckgrnd {
 	position: fixed;
 	top: 0;
@@ -70,7 +74,19 @@ body {
 	top: 180px;
 	background-color: #33ccff;
 	display: block;
-	width: 85%;
+	width: 75%;
+	height: auto;
 	margin: auto;
-	padding: 20px 40px 20px 40px;
+}
+#about_me_body {
+	font-size: 1.5em;
+	padding: 20px 20px 20px 20px;
+	display: inline-block;
+	width: 50%;
+	/*margin-left: 400px;*/
+	vertical-align: top;
+}
+#about_me_canvas {
+	vertical-align: bottom;
+	height: 100%;
 }
