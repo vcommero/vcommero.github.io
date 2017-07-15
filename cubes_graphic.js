@@ -182,7 +182,7 @@ function cubeGraphicMain() {
 	function updateAnim() {
 		clock += 0.016;
 		//clock = clock % 1.0;
-		console.log(clock);
+		//console.log(clock);
 	};
 	
 	var framesUntilRender = 0;

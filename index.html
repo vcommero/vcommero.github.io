@@ -27,7 +27,18 @@
   </body>
   <script>
 	window.onload = (function() {
-		cubeGraphicMain();
+		console.log('screen width: ' + screen.width);
+		if (screen.width > 767) {
+			cubeGraphicMain();
+		} else {
+			var canvas = document.getElementById("about_me_canvas");
+			var ctx = canvas.getContext('2d');
+			var imgObj = new Image();
+			imgObj.onload = function() {
+				ctx.drawImage(imgObj, 400, 400);
+			};
+			imgObj.src = 'cubes.png';
+		}
 	})();
   </script>
 </html>
