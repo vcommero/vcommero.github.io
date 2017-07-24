@@ -23,7 +23,6 @@ function cubeGraphicMain() {
 	var m4 = twgl.m4;
 	var v3 = twgl.v3;
 	
-	var x1d1 = twgl.m4.identity();
 	
 	var clock = 0.0;
 	
